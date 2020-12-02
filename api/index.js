@@ -1,3 +1,4 @@
-module.exports = (req, res) {
-    res.send('respuesta serverless alerta autos')
-}
+module.exports = (req, res) => {
+    const { name = 'World' } = req.query
+    res.status(200).send(`Hello ${name}!`)
+  }
